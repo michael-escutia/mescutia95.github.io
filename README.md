@@ -1,3 +1,5 @@
-# My Website
+# My Portfolio
 
-Currently containing my old WebGL projects. Will add more soon over time. 
+Currently containing a collection of my interactive WebGL programs. 
+
+Planning to add more over time. 
