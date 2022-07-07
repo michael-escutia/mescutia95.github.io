@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Escutia - Program 4</title>
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  </head>
+
+  <body onload="main()">
+    <div class="grid-container fluid">
+      <h4> Program 4 - Rock Paper Scissors: Tug of War (Textured)</h4>
+    </div>
+    <div class="grid-container fluid">
+      <div class="callout primary">
+        <p>Same as program 3, but now textures are implemented instead of solid colors.</p>
+        <p>Play a game of rock paper scissors against an AI. First one to win 3 times against the other player win!</p>
+        <p>Select your hand using the buttons. The score and hands played are shown below the tug of war. Negative points indicate that you're losing.</p>
+      </div>
+      <!--Drawing Types-->
+      <h5><strong>Hand:</strong></h5>
+      <button type="button" class="button" id="rock_btn">Rock</button>
+      <button type="button" class="button success" id="paper_btn">Paper</button>
+      <button type="button" class="button alert" id="scissor_btn">Scissors</button>
+      <div>
+        <canvas id="webgl" width="400" height="400">
+      </div>
+      </canvas>
+      <br>
+      <div class="grid-x grid margin-x">
+        <div class="callout primary">
+          <b id="handsPlayed">n/a vs n/a</b>
+        </div>
+      </div >      
+      <div class="grid-x grid margin-x">
+        <div class="callout alert">
+          <h5 id="Scoreboard">Score: 0</h5>
+        </div>
+      </div>
+    </div>
+    
+    <!-- WebGL Scripts -->
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="program.js"></script>
+    <!-- Scripts -->
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/what-input.js"></script>
+    <script src="/js/vendor/foundation.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

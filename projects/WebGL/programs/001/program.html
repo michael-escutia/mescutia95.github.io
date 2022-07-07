@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Escutia - Program 1</title>
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body onload="main()">
+  <div class="grid-container fluid">
+    <h4> Program 1</h4>
+  </div>
+  <div class="grid-container fluid">
+    <div class="callout primary">
+      <p>This program make dots on the screen when clicking in the black canvas area. 
+        The color of the dot drawn can be changed by adjusting the RGB values. You can also adjust the size of the dot as well. <br><br>
+      The goal of this program was to learn how to use event handlers to interact with the canvas, as well as learn to draw on the screen as well.</p>
+    </div>
+    <canvas id="webgl" width="400" height="400">
+    </canvas>
+
+      <div class="grid-container fluid">
+        <div class="grid-x">
+          <div class="cell small-2">
+            <label> R
+              <input type="text" id="red" value="1">
+            </label>
+          </div>
+          <div class="cell small-2">
+            <label> G
+              <input type="text" id="green" value="1">
+            </label>
+          </div>
+          <div class="cell small-2">
+            <label> B
+              <input type="text" id="blue" value="1">
+            </label>
+          </div>
+        </div>
+        <div class="grid-x">
+          <div class="cell small-3">
+            <label> Size
+              <input type="text" id="pointSize" value="10">
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!--Update Button-->
+      <button type="button" class="button" id="update_btn" class="button">Update</button>
+  </div>
+
+  <!-- WebGL Scripts -->
+  <script src="../lib/webgl-utils.js"></script>
+  <script src="../lib/webgl-debug.js"></script>
+  <script src="../lib/cuon-utils.js"></script>
+  <script src="../lib/cuon-matrix.js"></script>
+  <script src="program.js"></script>
+  <!-- Scripts -->
+  <script src="/js/vendor/jquery.js"></script>
+  <script src="/js/vendor/what-input.js"></script>
+  <script src="/js/vendor/foundation.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>

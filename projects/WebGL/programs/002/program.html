@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Escutia - Program 2</title>
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  </head>
+
+  <body onload="main()">
+    <div class="grid-container fluid">
+      <h4> Program 2</h4>
+    </div>
+    <div class="grid-container fluid">
+      <div class="callout primary">
+        <p>Simple shape generator. There are two variants: <br><br>
+          The goal of this program is to learn to make shapes in WebGL using coordinate calculations. <br><br>
+        Object 1: Starts off with a triangular polygon, increasing the number of sides changes the polygon. Can go on indefinitly till it appears as a circle. You can also change the pivot point and shading intensity for different effects. <br><br> 
+        Object 2, generates a star shape that changes the color and lines randomly after pressing 'Object 2' each time.</p>
+      </div>
+      <button type="button" class="button" id="app_1_btn">Object 1</button>
+      <button type="button" class="button" id="app_2_btn">Object 2</button>
+      
+      <br>
+      <canvas id="webgl" width="400" height="400">
+      </canvas>
+      <br>
+    <!--Apps--> 
+    <strong>Object 1 Controls:</strong>
+
+    <!--Sides-->
+    <button type="button" class="button alert" id="dec_btn">Dec Sides</button>
+    <button type="button" class="button success" id="inc_btn">Inc Sides</button>
+    <button type="button" class="button secondary" id="reset_btn">Reset</button>
+    
+    <br />
+
+    <!--Drawing Types-->
+    <div>
+      <strong>Pivot Point:</strong>
+        <button type="button" class="button" id="mid_btn">Middle</button>
+        <button type="button" class="button" id="top_btn">Edge</button>
+    </div> 
+    
+    <!--Intensity-->
+    <div>
+      <strong>Shading Intensity: </strong>
+      <div class="grid-x grid margin-x">
+
+          <input type="text" id="intensity" value = "1.0" style="width: 83px">
+          <!--Update Button-->
+          <button type="button" id="update_btn" class="button secondary"> Update </button>
+        </div>
+    </div>
+  </div>
+    
+    <!-- WebGL Scripts -->
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="program.js"></script>
+    <!-- Scripts -->
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/what-input.js"></script>
+    <script src="/js/vendor/foundation.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
